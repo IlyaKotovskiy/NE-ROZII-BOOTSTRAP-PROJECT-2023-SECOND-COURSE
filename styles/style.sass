@@ -59,3 +59,57 @@ body
 
 @import animation
 
+@media screen and (max-width: 1200px)
+    .bouquet
+        display: none
+    .delivery-wrap
+        gap: 0
+        justify-content: unset
+    .delivary-left
+        img
+            width: 100%
+            margin-left: 0
+    .slider
+        width: 100%
+    .buy-wrap
+        &:nth-child(2n - 1)
+            flex-direction: column-reverse
+    .ruler
+        margin-bottom: 30px
+            
+
+@media screen and (max-width: 992px)
+    .header-nav__nav
+        display: none
+    .swiper-button-next,
+    .swiper-button-prev
+        display: none
+
+@media screen and (max-width: 768px)
+    body
+        padding-top: 35px
+    .header-text-btns__btn
+        width: 100%
+        text-align: center
+    .delivary-left 
+        margin-bottom: 60px
+    .buy-slide__img
+        img
+            width: auto
+            height: 300px
+
+@media screen and (max-width: 576px)
+    .container
+        padding: 0 15px
+    h2
+        font-size: 32px
+    .header-wrap
+        padding: 6px
+    .header-text__title
+        font-size: 43px
+    .delivary-right__title
+        font-size: 24px
+    .buy-slide__img
+        img
+            width: 100%
+            height: 350px
